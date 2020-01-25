@@ -142,7 +142,7 @@ Partial Class Form1
         Me.BindingNavigator1.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.BindingNavigator1.Name = "BindingNavigator1"
         Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-        Me.BindingNavigator1.Size = New System.Drawing.Size(366, 25)
+        Me.BindingNavigator1.Size = New System.Drawing.Size(307, 25)
         Me.BindingNavigator1.TabIndex = 9
         Me.BindingNavigator1.Text = "BindingNavigator1"
         '
@@ -259,7 +259,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(366, 334)
+        Me.ClientSize = New System.Drawing.Size(307, 312)
         Me.Controls.Add(Me.IdentifierLabel)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.SetValue1TextBox)
@@ -278,7 +278,7 @@ Partial Class Form1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Text = "Example 1"
         CType(Me.BindingNavigator1,System.ComponentModel.ISupportInitialize).EndInit
         Me.BindingNavigator1.ResumeLayout(false)
         Me.BindingNavigator1.PerformLayout

@@ -1,0 +1,1 @@
+﻿This example is about running a stored procedure along with verifying a database connection can be made.
