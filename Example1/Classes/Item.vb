@@ -49,9 +49,14 @@ Namespace Classes
         End Function
 
 
-        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
-        Private Sub NotifyPropertyChanged(<CallerMemberName()> Optional ByVal propertyName As String = Nothing)
+        Public Event PropertyChanged As PropertyChangedEventHandler _
+            Implements INotifyPropertyChanged.PropertyChanged
+
+        Private Sub NotifyPropertyChanged(<CallerMemberName()>
+        Optional ByVal propertyName As String = Nothing)
+
             RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+
         End Sub
     End Class
 End NameSpace

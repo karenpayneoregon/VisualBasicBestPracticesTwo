@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Example2", "Example2\Example2.vbproj", "{BD0895E9-E034-4329-B317-8EFF7CB2A921}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ControlHelpers", "ControlHelpers\ControlHelpers.vbproj", "{0305F5F1-73EF-430B-A526-10A9FBC9BA0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{E29B9386-EE8C-4B8B-9C3A-DED7A275F37F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +30,16 @@ Global
 		{BD0895E9-E034-4329-B317-8EFF7CB2A921}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD0895E9-E034-4329-B317-8EFF7CB2A921}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD0895E9-E034-4329-B317-8EFF7CB2A921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0305F5F1-73EF-430B-A526-10A9FBC9BA0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0305F5F1-73EF-430B-A526-10A9FBC9BA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0305F5F1-73EF-430B-A526-10A9FBC9BA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0305F5F1-73EF-430B-A526-10A9FBC9BA0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0305F5F1-73EF-430B-A526-10A9FBC9BA0C} = {E29B9386-EE8C-4B8B-9C3A-DED7A275F37F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DC71EBD4-29A4-451A-8EC8-E268AF3744FB}

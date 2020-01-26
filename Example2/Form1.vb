@@ -5,7 +5,7 @@ Public Class Form1
     Private Async Sub Form1_Shown(sender As Object, e As EventArgs) Handles Me.Shown
 
         Dim operations = New DataOperations
-        If Await operations.TestConnection() Then
+        If Await operations.TestConnectionAsync() Then
             Dim customerList = Await operations.CustomersByGenderStoredProcedureAsync(1)
 
             BindingSource.DataSource = customerList

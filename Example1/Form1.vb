@@ -1,5 +1,5 @@
-﻿Imports Example1.Classes
-Imports Example1.LanguageExtensions
+﻿Imports Example1.LanguageExtensions
+Imports Item = Example1.Classes.Item
 
 Public Class Form1
     Private BindingSource As New BindingSource

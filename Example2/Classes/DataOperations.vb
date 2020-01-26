@@ -11,10 +11,20 @@ Namespace Classes
             DefaultCatalog = "CustomerDatabase"
             DatabaseServer = "KARENS-PC"
         End Sub
-        Public Async Function TestConnection() As Task(Of Boolean)
+        Public Async Function TestConnectionAsync() As Task(Of Boolean)
             Using cn As New SqlConnection With {.ConnectionString = ConnectionString}
                 Try
                     Await cn.OpenAsync()
+                    Return True
+                Catch ex As Exception
+                    Return False
+                End Try
+            End Using
+        End Function
+        Public Function TestConnection() As Boolean
+            Using cn As New SqlConnection With {.ConnectionString = ConnectionString}
+                Try
+                    cn.Open()
                     Return True
                 Catch ex As Exception
                     Return False
@@ -27,6 +37,7 @@ Namespace Classes
         ''' <param name="genderType">1 Female, 2 Male, 3 Other</param>
         ''' <returns>List of customer by gender</returns>
         Public Async Function CustomersByGenderStoredProcedureAsync(genderType As Integer) As Task(Of List(Of Customer))
+
             Dim customersList As New List(Of Customer)
 
             Using cn As New SqlConnection With {.ConnectionString = ConnectionString}
@@ -41,6 +52,7 @@ Namespace Classes
 
 
                     While reader.Read()
+
                         customersList.Add(New Customer() With {
                                              .Identifier = reader.GetInt32(0),
                                              .CompanyName = reader.GetString(1),
