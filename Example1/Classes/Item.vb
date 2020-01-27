@@ -5,7 +5,11 @@ Imports Example1.LanguageExtensions
 Namespace Classes
     Public Class Item
         Implements INotifyPropertyChanged
+
         Private _value1 As Integer
+        Private _value2 As Integer
+        Private _value3 As Integer
+        Private _value4 As Integer
 
         Public Sub New()
 
@@ -27,17 +31,50 @@ Namespace Classes
             Get
                 Return _value1
             End Get
-            Set(ByVal value As Integer)
-                If Not (value = _value1) Then
-                    _value1 = value
+            Set
+                If Not (Value = _value1) Then
+                    _value1 = Value
                     NotifyPropertyChanged()
                 End If
             End Set
         End Property
 
         Public Property Value2() As Integer
+            Get
+                Return _value2
+            End Get
+            Set
+                If Not (Value = _value2) Then
+                    _value2 = Value
+                    NotifyPropertyChanged()
+                End If
+            End Set
+        End Property
+
         Public Property Value3() As Integer
+            Get
+                Return _value3
+            End Get
+            Set
+                If Not (Value = _value3) Then
+                    _value3 = Value
+                    NotifyPropertyChanged()
+                End If
+            End Set
+        End Property
+
         Public Property Value4() As Integer
+            Get
+                Return _value4
+            End Get
+            Set
+                If Not (Value = _value4) Then
+                    _value4 = Value
+                    NotifyPropertyChanged()
+                End If
+            End Set
+        End Property
+
         Public ReadOnly Property Array() As Integer()
             Get
                 Return New Integer() {Value1, Value2, Value3, Value4}
